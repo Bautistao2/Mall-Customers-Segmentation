@@ -28,5 +28,6 @@ On average, customers are a mean of 39 years old, with a range of 18 to 70. Abou
 The identified clusters offer a distinct view of various customer groups delineated by their income and spending patterns. A simplified summary is presented below:![](https://github.com/Bautistao2/Mall-Customers-Segmentation/blob/main/images/clusters.jpg)
 
 
+Another valuable source of information is to classify customers according to their age and spending score, using the clusters previously identified.![](https://github.com/Bautistao2/Mall-Customers-Segmentation/blob/main/images/Cluster%20age.jpg)
 
-Another valuable source of information is to classify customers according to their age and spending score, using the clusters previously identified.![]
+![](https://github.com/Bautistao2/Mall-Customers-Segmentation/blob/main/images/boxp%3Bot%20age.jpg)
