@@ -27,9 +27,7 @@ labels = kmeansmodel.labels_
 b = df.copy()
 b['Cluster'] = labels
 
-
-
-  
+ 
 @st.cache_resource
 def load_data():
    df = pd.read_csv("./Mall_Customers_Data.csv")
@@ -52,7 +50,6 @@ def load_data():
    
 df1 = load_data 
    
-
 def Main_page():
     with open("./images/Client-segmentation.png", "rb") as file:
         imagen_data = file.read()
@@ -60,16 +57,12 @@ def Main_page():
         
     
     st.write("By  Osthailyd Bautista")    
-      
-
-    
+     
 def show_dataframe():
-    st.write("## Data of the Customers")
+    st.write("## Customer Data")
     st.write(b)
-    
-   
 
-def analisis_datos():
+def analyze_data():
     import streamlit as st
     from ydata_profiling import ProfileReport
     from streamlit_pandas_profiling import st_profile_report
@@ -78,14 +71,14 @@ def analisis_datos():
     import pandas as pd
   
 
-    st.write("## Analysis of the Data:")
+    st.write("## Analyze the Data:")
     profile = ProfileReport(b,  title="Profiling Report")
     st_profile_report(profile)       
     
 
 def Clustering():
    fig1=sns.pairplot(b,hue='Cluster',palette="Spectral")
-   st.write("## Different Customer Characteristics Based on Clusters")
+   st.write("## Customer Characteristics Based on Clusters")
    st.pyplot(fig1)
     
  
